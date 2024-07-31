@@ -1,0 +1,8 @@
+DBUSER = 
+DBPASS = 
+DBNAME = 
+DBSERVER =  
+
+
+JWT_KEY = 
+SERVERPORT = 

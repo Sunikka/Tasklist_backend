@@ -2,16 +2,19 @@ package main
 
 // Author: Sunikka
 
-// Anthony GG's REST API Tutorial was used as a base for migrating away from Gin
+// Credit: Anthony GG's REST API Tutorial was used as a base for removing Gin from dependencies
 // https://www.youtube.com/watch?v=pwZuNmAzaH8&list=PL0xRBLFXXsP6nudFDqMXzrvQCZrxSOm-2
 
 import (
 	"log"
 	"os"
+
+	"github.com/sunikka/tasklist-backendGo/internal/db"
+	"github.com/sunikka/tasklist-backendGo/internal/routes"
 )
 
 func main() {
-	store, err := NewStore()
+	store, err := db.NewStore()
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -24,7 +27,7 @@ func main() {
 	port := string(os.Getenv("SERVERPORT"))
 
 	store.Connect()
-	server := NewAPIServer(port, store)
+	server := routes.NewAPIServer(port, store)
 	server.Run()
 
 }
