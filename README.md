@@ -60,7 +60,8 @@ I ran the Go backend on the host, while a MySQL Docker container from the offici
         "email": "example@tasklist.com",
         "password": "Example1"
     }
-### /tasks/{userID}    (JWT-Protected)
+### /tasks/{userID}
+(JWT-Protected)
     Example: localhost:4200/tasks/1e2918cd-d27f-47e7-8318-cfd4d7056617
 
 
@@ -85,7 +86,8 @@ I ran the Go backend on the host, while a MySQL Docker container from the offici
         "user_id": "1e2918cd-d27f-47e7-8318-cfd4d7056617"
     }
 
-### /tasks/{userID}/{taskID}     (JWT-Protected)
+### /tasks/{userID}/{taskID}
+(JWT-Protected)
 
     
     Example: localhost:4200/tasks/1e2918cd-d27f-47e7-8318-cfd4d7056617/5f95a0f5-bd8b-4c2f-9973-f4b40fdb5404
@@ -112,7 +114,8 @@ I ran the Go backend on the host, while a MySQL Docker container from the offici
  
     #### DELETE - Delete a task by taskID
 
-### /users/{userID}      (JWT-Protected)
+### /users/{userID}
+(JWT-Protected)
 
     Example: localhost:4200/users/1e2918cd-d27f-47e7-8318-cfd4d7056617
 
