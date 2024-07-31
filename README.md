@@ -62,8 +62,8 @@ I ran the Go backend on the host, while a MySQL Docker container from the offici
     }
 ### /tasks/{userID}
 (JWT-Protected)
-    Example: localhost:4200/tasks/1e2918cd-d27f-47e7-8318-cfd4d7056617
 
+    Example: localhost:4200/tasks/1e2918cd-d27f-47e7-8318-cfd4d7056617
 
     #### GET - Get all tasks by users ID
 
