@@ -1,9 +1,6 @@
 build:
-	@go build -o bin/tasklist_backendGo
+	@go build -o cmd/tasklist_backendGo
 
 run: build
-	@./bin/tasklist_backendGo
-
-test:
-	@go test -v ./...
+	@./cmd/tasklist_backendGo
 
