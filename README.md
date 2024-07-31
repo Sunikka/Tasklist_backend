@@ -25,7 +25,7 @@ This project has probably gone as far as I want to take it. I might improve the 
 
 
 ## Development environment:
-I ran the Go backend on the host, while a MySQL Docker container from the official image (https://hub.docker.com/_/mysql) served as the database server. The file 'dotenvBase.txt' has a field for every environment variable necessary for running the application. You just need to populate the fields and rename the file to '.env'.
+I ran the Go backend on the host, while a MySQL Docker container from the official image (https://hub.docker.com/_/mysql) served as the database server. The file 'dotenvBase.txt' has a field for every environment variable necessary for running the application.
 
 ## Endpoints
 ### /login
